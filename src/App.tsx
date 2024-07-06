@@ -11,9 +11,9 @@ const App = () => {
       <Navbar />
       <div className="max-w-[90%] mx-auto pb-5">
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/store" element={<Store />} />
-          <Route path="/about" element={<Aboute />} />
+          <Route path="shopping-cart/" element={<Home />} />
+          <Route path="shopping-cart/store" element={<Store />} />
+          <Route path="shopping-cart/about" element={<Aboute />} />
         </Routes>
       </div>
     </ShoppingCartProvider>

@@ -19,7 +19,15 @@ const Navbar = () => {
               onClick={() => setCurrentUrlId(i + 1)}
               key={i}
             >
-              <NavLink to={e === "Home" ? "/" : e.toLowerCase()}>{e}</NavLink>
+              <NavLink
+                to={
+                  e === "Home"
+                    ? "shopping-cart/"
+                    : "/shopping-cart/" + e.toLowerCase()
+                }
+              >
+                {e}
+              </NavLink>
             </li>
           );
         })}
